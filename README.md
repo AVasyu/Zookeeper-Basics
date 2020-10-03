@@ -4,6 +4,7 @@ Repository containing Java code to perform basic operations on Zookeeper
 Download zookeeper and use the following command to start zookeeper on your local machine:-
 For Windows:- zookeeper-server-start.bat <PATH_TO_ZOOKEEPER_CONFIG_FOLDER>\zookeeper.properties
 For Linux:- ./zookeeper-server-start.sh <PATH_TO_ZOOKEEPER_CONFIG_FOLDER>\zookeeper.properties
+
 By default Zookeeper will run on 2181 port. You can change the port in the properties file.
 
 This is a maven project. To import the zookeeper dependency on your local machine, update the project using command "mvn update" or if the projected is imported in Eclipse IDE, right click on the project -> Select Maven -> Update Project. This will download the dependencies required to connect and interact with Zookeeper.
