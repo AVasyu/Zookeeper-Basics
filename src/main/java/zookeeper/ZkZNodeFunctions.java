@@ -36,7 +36,7 @@ public class ZkZNodeFunctions {
         zkc = new ZKConnect();
         zk = zkc.connect("localhost");
 
-        String path = "/avasyu/test1";
+        String path = "/zNodeTest/test1";
         byte[] createData = "Test".getBytes();
 
         // create(path, createData);

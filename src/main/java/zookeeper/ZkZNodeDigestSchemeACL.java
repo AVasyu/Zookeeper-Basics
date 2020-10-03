@@ -13,8 +13,8 @@ public class ZkZNodeDigestSchemeACL {
         zkc = new ZKConnect();
         zk = zkc.connect("localhost");
 
-        zk.addAuthInfo("digest", "avasyu:avasyu".getBytes());
-        byte[] data = zk.getData("/avasyu", true, zk.exists("/avasyu", true));
+        zk.addAuthInfo("digest", "userName:password".getBytes());
+        byte[] data = zk.getData("/zNodeTest", true, zk.exists("/zNodeTest", true));
         for(byte b: data)
             System.out.print((char) b);
     }

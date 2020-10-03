@@ -19,7 +19,7 @@ public class ZKZnodeACL {
         zkc = new ZKConnect();
         zk = zkc.connect("localhost");
 
-        List<ACL> acl = getAcl("/avasyu/test1");
+        List<ACL> acl = getAcl("/znodeTest/test1");
         for(ACL aclItem: acl){
             System.out.println(aclItem.toString());
         }
