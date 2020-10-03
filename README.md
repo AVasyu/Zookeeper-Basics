@@ -13,5 +13,5 @@ There are 5 files in the repo.
 1. ZKConnect.java -> File containing the code to establish connection to Zookeeper.
 2. ZKTestConnection.java -> File containing the test code to check if the connection establishment was successful or not. By default it tries to connect to zookeeper running on local mahine ("localhost:2181")
 3. ZKZnodeACL.java -> This file contains the code to get information about a particular zookeeper ZNode.
-4. ZkZNodeDigestSchemeACL.java -> Contains the code to add a layer of authorization while accessing a particular zookeeper Znode.
+4. ZkZNodeDigestSchemeACL.java -> Contains the code to add a layer of authorization while accessing a particular zookeeper Znode. To set digest authentication, user can open the Zookeeper shell and run the command:- "addauth digest <username>:<password>"
 5. ZkZnodeFunctions.java -> This contains the basic CRUD operations which can be performed on a zookeeper znode. It contains the logic to create, update, delete or read a Znode.
